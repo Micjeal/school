@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Excellence Academy's comprehensive academic programs from primary to secondary education, including special programs and international curricula.">
+    <meta name="keywords" content="academics, programs, curriculum, primary, secondary, education, IB, STEM">
+    
+    <title>Academic Programs - Excellence Academy</title>
+    
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0iIzAwMzM2NiIvPgo8cGF0aCBkPSJNOCA4SDE2VjI0SDhWOFoiIGZpbGw9IiNGRkQ3MDAiLz4KPHN2Zz4K">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html" aria-label="Excellence Academy Home">
+                    <img src="images/ec.jpeg" alt="Excellence Academy Logo" class="logo-img">
+                    <span class="logo-text">Excellence Academy</span>
+                </a>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                    <ul class="dropdown">
+                        <li><a href="about.html#history" class="dropdown-link">Our History</a></li>
+                        <li><a href="about.html#mission" class="dropdown-link">Mission & Vision</a></li>
+                        <li><a href="about.html#leadership" class="dropdown-link">Leadership</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="academics.html" class="nav-link">Academics</a>
+                    <ul class="dropdown">
+                        <li><a href="#primary" class="dropdown-link">Primary Education</a></li>
+                        <li><a href="#secondary" class="dropdown-link">Secondary Education</a></li>
+                        <li><a href="#special" class="dropdown-link">Special Programs</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="news.html" class="nav-link">News</a>
+                </li>
+                <li class="nav-item">
+                    <a href="events.html" class="nav-link">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="admissions.html" class="nav-link">Admissions</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <div class="mobile-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Academic Excellence</h1>
+                <p>Discover our comprehensive range of academic programs designed to nurture intellectual curiosity, critical thinking, and lifelong learning.</p>
+            </div>
+        </section>
+
+        <!-- Filter Buttons -->
+        <section class="section section-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="showPrograms('all')">All Programs</button>
+                    <button class="filter-btn" onclick="showPrograms('primary')">Primary</button>
+                    <button class="filter-btn" onclick="showPrograms('secondary')">Secondary</button>
+                    <button class="filter-btn" onclick="showPrograms('special')">Special Programs</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section class="section section-programs">
+            <div class="container">
+                <div class="grid grid-2" id="programs-container">
+                    <!-- All Programs -->
+                    <div class="card program-card" data-category="primary">
+                        <div class="card-content">
+                            <div class="program-level">
+                                <span class="level-badge level-primary">Primary Education</span>
+                            </div>
+                            <h3 class="card-title">Early Years Foundation (Ages 3-6)</h3>
+                            <p class="card-text">A nurturing environment where young learners develop foundational skills through play-based learning and structured activities.</p>
+                            <ul class="program-details">
+                                <li>Phonics and early literacy</li>
+                                <li>Mathematical concepts</li>
+                                <li>Creative arts and music</li>
+                                <li>Physical development</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card program-card" data-category="primary">
+                        <div class="card-content">
+                            <div class="program-level">
+                                <span class="level-badge level-primary">Primary Education</span>
+                            </div>
+                            <h3 class="card-title">Elementary Program (Ages 6-12)</h3>
+                            <p class="card-text">Comprehensive curriculum focusing on core subjects while developing critical thinking and problem-solving skills.</p>
+                            <ul class="program-details">
+                                <li>English Language Arts</li>
+                                <li>Mathematics and Science</li>
+                                <li>Social Studies</li>
+                                <li>Foreign Languages</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card program-card" data-category="secondary">
+                        <div class="card-content">
+                            <div class="program-level">
+                                <span class="level-badge level-secondary">Secondary Education</span>
+                            </div>
+                            <h3 class="card-title">Middle School (Ages 12-15)</h3>
+                            <p class="card-text">Preparing students for advanced studies with rigorous academics and character development programs.</p>
+                            <ul class="program-details">
+                                <li>Advanced Mathematics</li>
+                                <li>Sciences (Biology, Chemistry, Physics)</li>
+                                <li>Literature and Writing</li>
+                                <li>History and Geography</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card program-card" data-category="secondary">
+                        <div class="card-content">
+                            <div class="program-level">
+                                <span class="level-badge level-secondary">Secondary Education</span>
+                            </div>
+                            <h3 class="card-title">High School (Ages 15-18)</h3>
+                            <p class="card-text">College preparatory program with AP courses and university-level research opportunities.</p>
+                            <ul class="program-details">
+                                <li>Advanced Placement courses</li>
+                                <li>University partnerships</li>
+                                <li>Research projects</li>
+                                <li>Career guidance</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card program-card" data-category="special">
+                        <div class="card-content">
+                            <div class="program-level">
+                                <span class="level-badge level-special">Special Programs</span>
+                            </div>
+                            <h3 class="card-title">STEM Excellence Program</h3>
+                            <p class="card-text">Cutting-edge science, technology, engineering, and mathematics program with state-of-the-art facilities.</p>
+                            <ul class="program-details">
+                                <li>Robotics and AI</li>
+                                <li>Advanced laboratories</li>
+                                <li>Research competitions</li>
+                                <li>Industry partnerships</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card program-card" data-category="special">
+                        <div class="card-content">
+                            <div class="program-level">
+                                <span class="level-badge level-special">Special Programs</span>
+                            </div>
+                            <h3 class="card-title">International Baccalaureate</h3>
+                            <p class="card-text">Globally recognized program preparing students for international universities and careers.</p>
+                            <ul class="program-details">
+                                <li>IB Diploma Programme</li>
+                                <li>Global perspectives</li>
+                                <li>Extended essay</li>
+                                <li>Community service</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Excellence Features -->
+        <section class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Why Our Academic Programs Excel</h2>
+                <div class="grid grid-3">
+                    <div class="card fade-in">
+                        <div class="card-content">
+                            <h3 class="card-title text-gold">🎓 Expert Faculty</h3>
+                            <p class="card-text">Our teachers are highly qualified professionals with advanced degrees and years of experience in their respective fields. They bring passion, expertise, and innovative teaching methods to every classroom.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <div class="card-content">
+                            <h3 class="card-title text-gold">🔬 Modern Facilities</h3>
+                            <p class="card-text">State-of-the-art laboratories, well-equipped libraries, technology centers, and specialized learning spaces provide students with the resources they need to excel in their studies.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <div class="card-content">
+                            <h3 class="card-title text-gold">👥 Small Class Sizes</h3>
+                            <p class="card-text">With an average class size of 20 students, we ensure personalized attention and meaningful interaction between teachers and students, fostering better learning outcomes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <div class="card-content">
+                            <h3 class="card-title text-gold">🌍 Global Perspective</h3>
+                            <p class="card-text">Our curriculum incorporates international perspectives and cross-cultural understanding, preparing students to thrive in an increasingly connected world.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <div class="card-content">
+                            <h3 class="card-title text-gold">💡 Innovation Focus</h3>
+                            <p class="card-text">We emphasize creativity, critical thinking, and problem-solving skills through project-based learning, research opportunities, and hands-on experiences.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <div class="card-content">
+                            <h3 class="card-title text-gold">📊 Proven Results</h3>
+                            <p class="card-text">Our students consistently achieve excellent results in standardized tests and gain admission to top universities worldwide, with a 98% university acceptance rate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Assessment & Support -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Assessment & Student Support</h2>
+                <div class="grid grid-2">
+                    <div class="fade-in">
+                        <h3 class="card-title text-gold">📋 Assessment Methods</h3>
+                        <ul class="list-style-none">
+                            <li>✅ Continuous assessment and formative evaluation</li>
+                            <li>✅ Project-based assessments and portfolios</li>
+                            <li>✅ Standardized testing and benchmarking</li>
+                            <li>✅ Peer assessment and self-reflection</li>
+                            <li>✅ Performance-based demonstrations</li>
+                            <li>✅ Regular progress reports and parent conferences</li>
+                        </ul>
+                    </div>
+                    <div class="fade-in">
+                        <h3 class="card-title text-gold">🤝 Student Support Services</h3>
+                        <ul class="list-style-none">
+                            <li>✅ Academic counseling and guidance</li>
+                            <li>✅ Learning support for diverse needs</li>
+                            <li>✅ Tutoring and remedial programs</li>
+                            <li>✅ Gifted and talented enrichment</li>
+                            <li>✅ Career guidance and university preparation</li>
+                            <li>✅ Mental health and wellness support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section cta-section">
+            <div class="container">
+                <h2 class="cta-title">Ready to Join Our Academic Community?</h2>
+                <p class="cta-text">Discover how our academic programs can help your child reach their full potential and prepare for a successful future.</p>
+                <div class="cta-buttons">
+                    <a href="admissions.html" class="btn btn-secondary">Apply Now</a>
+                    <a href="contact.html" class="btn btn-outline">Schedule a Visit</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Excellence Academy</h3>
+                    <p>Nurturing minds and building futures since 1990. We are committed to providing world-class education that prepares students for success in life.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/excellenceacademy" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="https://twitter.com/excellenceacademy" target="_blank" rel="noopener" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="https://instagram.com/excellenceacademy" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="https://linkedin.com/company/excellenceacademy" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 123 Education Street<br>Academic City, State 12345</p>
+                    <p>📞 <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                    <p>✉️ <a href="mailto:info@excellenceacademy.edu">info@excellenceacademy.edu</a></p>
+                    <p>🌐 <a href="#">www.excellenceacademy.edu</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>School Hours</h3>
+                    <p><strong>Monday - Friday:</strong><br>8:00 AM - 3:30 PM</p>
+                    <p><strong>Office Hours:</strong><br>7:30 AM - 4:00 PM</p>
+                    <p><strong>Saturday:</strong><br>9:00 AM - 12:00 PM<br>(Office Only)</p>
+                </div>
+
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/ec.jpeg" alt="Excellence Academy Logo" class="logo-img">
+                        <span class="logo-text">Excellence Academy</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Excellence Academy. All rights reserved. | <a href="#" class="text-gold">Privacy Policy</a> | <a href="#" class="text-gold">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function showPrograms(category) {
+            const cards = document.querySelectorAll('.program-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Remove active class from all buttons
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+            
+            // Show/hide cards based on category
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+    
+    <style>
+        /* Program-specific styles */
+        .level-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .level-primary {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+        
+        .level-secondary {
+            background: #f3e5f5;
+            color: #7b1fa2;
+        }
+        
+        .level-special {
+            background: #fff3e0;
+            color: #f57c00;
+        }
+        
+        .program-card {
+            transition: all 0.3s ease;
+        }
+        
+        .program-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .program-level {
+            margin-bottom: 1rem;
+        }
+        
+        .program-details ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .program-details li {
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+        
+        .program-details li::before {
+            content: '•';
+            color: var(--secondary-gold);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</body>
+</html>
