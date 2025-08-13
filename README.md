@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Excellence Academy Website
 
 A fully responsive, professional-grade school website built with HTML5, CSS3, and Vanilla JavaScript.
@@ -139,3 +140,6 @@ This project is created for educational purposes. Feel free to use and modify as
 - Icons using Unicode emojis for universal support
 - Google Fonts for typography
 - CSS animations and transitions for enhanced UX
+=======
+# school
+>>>>>>> 2aec8202f92b49c12724ecba7298f88dc0098be0
